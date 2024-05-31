@@ -6,11 +6,11 @@ import {Paragraph} from "@/components";
 import {useState} from "react";
 
 export default function Home() {
-    const [counter, setCounter] = useState<number>(0);
+    const [counter, setCounter] = useState<number>(4);
   return (
     <>
-        <Htag tag={'h1'}>{counter}</Htag>
-        <Button appearance={'primary'} arrow={'down'} onClick={() => setCounter(counter + 1)}>
+        <Htag tag={'h1'}>Title</Htag>
+        <Button appearance={'primary'} arrow={'down'}>
             Hello
         </Button>
         <Button appearance={'transparent'} arrow={'right'}>
@@ -22,7 +22,7 @@ export default function Home() {
         <Tag color={'transparent'}>money</Tag>
         <Tag color={'grey'}>money</Tag>
         <Tag color={'primary'}>money</Tag>
-        <Rating rating={4}></Rating>
+        <Rating rating={counter} isEditable setRating={setCounter} />
     </>
   );
 }

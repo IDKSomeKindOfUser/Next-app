@@ -1,7 +1,13 @@
-.filled{
-    fill: var(--color-primary);
+.star svg {
+    margin-right: 5px;
+
+    transition: filter 0.3s;
 }
 
-.star{
-    margin-right: 5px;
+.filled svg{
+    filter: invert(23%) sepia(64%) saturate(7500%) hue-rotate(230deg) brightness(95%) contrast(95%);
+}
+
+.editable {
+    cursor: pointer;
 }
