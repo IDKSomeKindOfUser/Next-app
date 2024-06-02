@@ -4,9 +4,12 @@ import {Htag, Rating, Tag} from "@/components";
 import {Button} from "@/components";
 import {Paragraph} from "@/components";
 import {useState} from "react";
+import {withLayout} from "@/Layout/Layout";
 
-export default function Home() {
+export function Home() {
     const [counter, setCounter] = useState<number>(4);
+
+
   return (
     <>
         <Htag tag={'h1'}>Title</Htag>
@@ -26,3 +29,5 @@ export default function Home() {
     </>
   );
 }
+
+export default withLayout(Home);
