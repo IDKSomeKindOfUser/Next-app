@@ -10,7 +10,9 @@
     "stylelint": "stylelint \"**/*.css\" --fix"
   },
   "dependencies": {
-    "next": "14.2.3",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "next": "^14.2.3",
     "postcss": "^8.4.38",
     "postcss-sorting": "^8.0.2",
     "react": "^18",

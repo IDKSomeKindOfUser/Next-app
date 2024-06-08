@@ -1,0 +1,29 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 40px;
+    padding: 25px 35px;
+    justify-items: center;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.privacy{
+    justify-self: flex-start;
+}
+
+.link:hover{
+    color: var(--color-black-secondary);
+    transition-duration: var(--transition-duration);
+}
+
+@media (max-width: 768px) {
+    .footer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .privacy{
+        justify-self: center;
+    }
+}
